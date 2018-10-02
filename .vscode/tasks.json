@@ -14,14 +14,25 @@
 
             "command": "./build.sh"
         },
+
         {
-            "label": "Launch QEMU",
+            "label": "Launch QEMU (i386)",
             "dependsOn":[
                 "Build Kernel",
             ],
             "type": "shell",
             "isBackground": true,
-            "command": "./qemu.sh",
+            "command": "./qemu.i386.sh",
+        },
+
+        {
+            "label": "Launch QEMU (x86_64)",
+            "dependsOn":[
+                "Build Kernel",
+            ],
+            "type": "shell",
+            "isBackground": true,
+            "command": "./qemu.x86_64.sh",
         }
     ]
 }
