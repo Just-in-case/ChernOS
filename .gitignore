@@ -1,0 +1,5 @@
+# VSCode workspace config, might not be the same for every setup
+.vscode/settings.json
+
+# The build folder where all the binary files will be placed
+build/
