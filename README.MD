@@ -1,17 +1,35 @@
 # ChernOS
 
 ## Building
-For now there is some basic `build.sh` file just to get it working.
+Run
+"`build.sh`" or press inside of vs-code ctr+b.
 
-Just click on the Debug configuration and it will compile and start Qemu. 
+## Execution
+Run
+"`qemu.x86_64.sh`"
+or
+"`qemu.x86_64_wsl.sh`" for wsl.
 
-**Note:** If you are using WSL, also make sure you have Xlaunch/Xming running otherwise Qemu will fail to start. It will automatically make sure to set `DISPLAY` to `0:0`
+## Debugging
+Run
+`qemu.gdb.x86_64.sh`
+or
+`qemu.gdb.x86_64_wsl.sh`" for wsl.\
+Than lauche the vs-code debugger.
 
-## Project setup
-This repo includes a Visual Studio Code project configuration for building and debugging the OS.
+## Installs
++ gcc -> C
++ nasm -> intel assembly
++ qemu -> lauching the os on your os
++ gdb -> debugging
++ vs-code -> ide
++ vs-code Native Debug extionson -> proper gdb integraton
+
+## Setup
+If you can't run the shell scripts make shure they have execution right:
+"`chmod 777 file.sh`"
 
 If you have problems with the InteliSense you might need to change your compiler location in the `c_cpp_properties.json` file:
-
 ```json
 {
     "configurations": [
@@ -23,5 +41,4 @@ If you have problems with the InteliSense you might need to change your compiler
     ],
 }
 ```
-
 *Note: This configuration is only needed for InteliSense to work, everything else is going to be handled by make or whatever we end up using*
