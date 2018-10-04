@@ -16,23 +16,23 @@
         },
 
         {
-            "label": "Launch QEMU (i386)",
+            "label": "Debug",
             "dependsOn":[
                 "Build Kernel",
             ],
             "type": "shell",
             "isBackground": true,
-            "command": "./qemu.i386.sh",
+            "command": "./qemu.gdb.x86_64_wsl.sh",
         },
 
         {
-            "label": "Launch QEMU (x86_64)",
+            "label": "Debug WSL",
             "dependsOn":[
                 "Build Kernel",
             ],
             "type": "shell",
             "isBackground": true,
-            "command": "./qemu.x86_64.sh",
+            "command": "./qemu.gdb.x86_64.sh",
         }
     ]
 }

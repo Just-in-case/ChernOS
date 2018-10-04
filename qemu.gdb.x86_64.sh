@@ -1,1 +1,1 @@
-qemu-system-x86_64 -s -S build/main.bin
+qemu-system-x86_64 -s -S -kernel chernos.elf

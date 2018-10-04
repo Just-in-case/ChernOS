@@ -3,3 +3,5 @@
 
 # The build folder where all the binary files will be placed
 build/
+
+*.elf

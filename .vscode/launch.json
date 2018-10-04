@@ -5,23 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug (i386)",
+            "name": "Debug ",
             "type": "gdb",
             "request": "attach",
             "executable": "./chernos.elf",
             "target": ":1234",
             "remote": true,
-            "preLaunchTask": "Launch QEMU (i386)",
-            "cwd": "${workspaceRoot}"
-        },
-        {
-            "name": "Debug (x86_64)",
-            "type": "gdb",
-            "request": "attach",
-            "executable": "./chernos.elf",
-            "target": ":1234",
-            "remote": true,
-            "preLaunchTask": "Launch QEMU (x86_64)",
             "cwd": "${workspaceRoot}"
         }
     ]

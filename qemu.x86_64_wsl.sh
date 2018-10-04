@@ -1,2 +1,2 @@
 export DISPLAY=0:0
-qemu-system-x86_64 build/main.bin
+qemu-system-x86_64 -kernel chernos.elf
