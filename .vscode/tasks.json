@@ -9,9 +9,11 @@
                 "Compile ASM Sources"
             ],
             "type": "shell",
-            "group": "build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
             "problemMatcher": "$gcc",
-
             "command": "./build.sh"
         },
 
@@ -22,17 +24,18 @@
             ],
             "type": "shell",
             "isBackground": true,
-            "command": "./qemu.gdb.x86_64_wsl.sh",
+            "command": "./qemu.gdb.sh",
         },
 
         {
-            "label": "Debug WSL",
+            "label": "Run",
             "dependsOn":[
                 "Build Kernel",
             ],
+            "group": "test",
             "type": "shell",
             "isBackground": true,
-            "command": "./qemu.gdb.x86_64.sh",
+            "command": "./qemu.sh",
         }
     ]
 }
