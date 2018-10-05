@@ -13,6 +13,15 @@
             "remote": true,
             "preLaunchTask": "Debug",
             "cwd": "${workspaceRoot}"
+        },
+        {
+            "name": "Debug (Don't launch qemu)",
+            "type": "gdb",
+            "request": "attach",
+            "executable": "./chernos.elf",
+            "target": ":1234",
+            "remote": true,
+            "cwd": "${workspaceRoot}"
         }
     ]
 }
